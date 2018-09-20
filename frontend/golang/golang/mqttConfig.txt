@@ -1,0 +1,11 @@
+action=sub
+broker=tcp://ws2.aimobile.com.tw:1883
+id=
+user=
+password=
+topic=
+payload=Start mMqttInit()
+qos=2
+cleansess=true
+num=3
+store=:memory:

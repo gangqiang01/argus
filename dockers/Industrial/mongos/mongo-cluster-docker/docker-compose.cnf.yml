@@ -1,0 +1,70 @@
+version: '2'
+services:
+    mongo-conf-2:
+        container_name: "mongo-conf-2"
+        image: mongos_conf
+        network_mode: aim-mongo-cluster
+        ports:
+            - "31012:27017"
+#        command: mongod --replSet cnf-serv --rest --configsvr --port 27017 --oplogSize 16 --noprealloc --smallfiles
+        environment:
+            - replSet=aim-mongo-conf
+            - size=16
+        volumes:
+            - ../conf/run.sh:/run.sh       
+        restart: always
+
+    mongo-conf-3:
+        container_name: "mongo-conf-3"
+        image: mongos_conf
+        network_mode: aim-mongo-cluster
+        ports:
+            - "31013:27017"
+#        command: mongod --replSet cnf-serv --rest --configsvr --port 27017 --oplogSize 16 --noprealloc --smallfiles
+        environment:
+            - replSet=aim-mongo-conf
+            - size=16
+        volumes:
+            - ../conf/run.sh:/run.sh       
+        restart: always 
+
+    mongo-conf-1:
+        container_name: "mongo-conf-1"
+        image: mongos_conf
+        network_mode: aim-mongo-cluster
+        ports:
+            - "31011:27017"
+#        command: mongod --replSet cnf-serv --rest --configsvr --port 27017 --oplogSize 16 --noprealloc --smallfiles
+        environment:
+            - replSet=aim-mongo-conf
+            - size=16
+        volumes:
+            - ../conf/run.sh:/run.sh       
+        links:
+            - mongo-conf-2:mongo-conf-2
+            - mongo-conf-3:mongo-conf-3
+        restart: always
+
+    mongo-conf-setup:
+        container_name: "mongo-conf-setup"
+        image: mongos_conf
+        network_mode: aim-mongo-cluster
+        depends_on:
+            - "mongo-conf-1"
+            - "mongo-conf-2"
+            - "mongo-conf-3"
+        links:
+            - mongo-conf-1:mongo-conf-1
+            - mongo-conf-2:mongo-conf-2
+            - mongo-conf-3:mongo-conf-3
+        volumes:
+            - ./scripts:/scripts
+        environment: 
+            - MONGO1=47.95.248.121
+            - MONGO2=47.95.248.121
+            - MONGO3=47.95.248.121
+            - RS=aim-mongo-conf
+            - PORT1=31011
+            - PORT2=31012
+            - PORT3=31013
+        entrypoint: [ "/scripts/setup-cnf.sh" ]

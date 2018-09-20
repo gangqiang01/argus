@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>AIM Android RCP</title>
+	<link rel="icon" href="http://www.aimobile.com.tw/wp-content/uploads/2016/09/cropped-AIMobile-icon-1-32x32.png" sizes="32x32">
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!-- FONT AWESOME STYLE  -->
+    
+	<!-- DATATABLE STYLE  -->
+    <!--<link href="assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="assets/js/bootstrap-select.js"></script>
+	<link rel="stylesheet" href="assets/css/bootstrap-select.css">
+	<!-- Alert Notification -->
+	<script src="assets/js/jquery.numpad.js"></script>
+	<link rel="stylesheet" href="assets/css/jquery.numpad.css">
+	<link rel="stylesheet" href="assets/css/command-search.css">
+	<link href="assets/css/bootstrap-tagsinput.css" rel="stylesheet">
+	<!-- Alert Notification -->
+	
+	<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" type='text/css'/>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.0.js"></script>
+	<!-- datatables select v -->
+	<link href="https://cdn.datatables.net/select/1.2.2/css/select.dataTables.min.css" rel="stylesheet" type='text/css'/>
+    <!-- CUSTOM STYLE  -->
+	
+	<script src="assets/js/p5.min.js" type='text/javascript'></script>
+	
+	<!--numpad -->
+	
+	
+	
+	<!-- One drive api -->
+	<!-- <script type="text/javascript" src="https://js.live.net/v7.2/OneDrive.js"></script>  -->
+	<!-- <script> -->
+	<!-- function launchOneDrivePicker(){ -->
+		<!-- var odOptions = { clientId: "INSERT-APP-ID-HERE", -->
+		  <!-- action: "query", -->
+		  <!-- multiSelect: true, -->
+		  <!-- advanced: {}, -->
+		  <!-- success: function(files) { /* success handler */ }, -->
+		  <!-- cancel: function() { /* cancel handler */ }, -->
+		  <!-- error: function(e) { /* error handler */ }}; -->
+		<!-- OneDrive.open(odOptions); -->
+	<!-- } -->
+	<!-- </script> -->
+	<!-- One drive api -->
+	
+	<!-- google drive api-->
+	
+	
+	<!-- google drive api-->
+	
+	<link href="assets/css/AllDevice.css" rel="stylesheet" />	
+    <link href="assets/css/style.css" rel="stylesheet" />
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link href="assets/css/select.dataTables.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-tagsinput.css" rel="stylesheet">
+	
+    <!-- GOOGLE FONT -->
+   
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.css' rel='stylesheet' type='text/css' />
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>	
+	<script src="assets/js/userpermissions.js" type='text/javascript'></script>
+	<script src="assets/js/command.js" type='text/javascript'></script>
+	<script language=JavaScript src="mqttws31.js"></script>
+	<script src="assets/js/mqtt_client.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.js"></script>
+	
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+</head>
+<body id="CookieListener">
+	<div class="form-group">
+		<label>Device ID</label>
+		<input class="form-control" id="device" type="text" placeholder="256e0f9986bd36e765d5fae0">
+	</div>
+    <div class="form-group">
+		<label>Command</label>
+		<input class="form-control" id="commandline" type="text" placeholder="soundSet">
+	</div>
+	<div class="form-group">
+		<label>Command Path</label>
+		<input class="form-control" id="commandpath" type="text">
+	</div>
+	<div class="form-group">
+		<label>Command Param</label>
+		<input class="form-control" id="commandparam" type="text" placeholder="170">
+	</div>
+	<button class="Command">SendByGolang</button>
+	<script>
+		
+		$('.Command').on("click",function(){
+			var id = [];
+			id.push($('#device').val());
+		//console.log(GetCommand(100, "Comm")+"@%@"+GetCommand(100, "Path")+"@%@;;;"+GetCommand(100, "Param"));
+			//SendByGolang($('#device').val()+"/",$('#commandline').val(), "test", "show", "system");
+			NewSendByGolang(id, $('#commandline').val(), $('#commandpath').val(),  $('#commandparam').val(), "test", "test", "system");
+			console.log($('#commandpath').val());
+		});
+	</script>
+    <script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/dataTables/jquery.dataTables.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/rowreorder/1.2.3/js/dataTables.rowReorder.min.js"></script>
+	<script src="https://cdn.datatables.net/responsive/2.2.0/js/dataTables.responsive.min.js"></script>
+	<script src="assets/js/dataTables.scroller.js"></script>
+	<script src="assets/js/bootstrap-tagsinput.js"></script>
+	<script src="assets/js/BootstrapMenu.min.js"></script>
+	<script src="assets/js/timepicker.js"></script>
+</body>
+</html>

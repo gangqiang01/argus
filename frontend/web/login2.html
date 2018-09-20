@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <script language=JavaScript src="assets/mqtt/mqttws31.js"></script>
+    <script>
+      console.log('start');
+
+      // Create a client instance
+      client = new Paho.MQTT.Client("10.130.3.23", Number(11882), "");
+
+      // set callback handlers
+      client.onConnectionLost = onConnectionLost;
+      client.onMessageArrived = onMessageArrived;
+
+	  
+	  var option = {
+		//timeout: 3,
+		useSSL: true,
+		//cleanSession: true,
+		onSuccess: onConnect,
+		onFailure: function(message){
+		
+		}
+	  };
+	  
+      // connect the client
+      //client.connect({onSuccess:onConnect});
+		client.connect(option);
+
+
+      // called when the client connects
+      function onConnect() {
+        // Once a connection has been made, make a subscription and send a message.
+        console.log("onConnect");
+        client.subscribe("jsAddress");
+        // message = new Paho.MQTT.Message("Hello");
+        // message.destinationName = "ServerAimobile20170616";
+        // client.send(message);
+
+
+      }
+
+      // called when the client loses its connection
+      function onConnectionLost(responseObject) {
+        if (responseObject.errorCode !== 0) {
+          console.log("onConnectionLost:"+responseObject.errorMessage);
+        }
+      }
+
+      // called when a message arrives
+      function onMessageArrived(message) {
+        console.log("onMessageArrived:"+message.payloadString);
+      }
+
+      //////////////////////////////////////////
+      function FunctionSendMsgToGolang(value_topic ,value_msg) {
+        message = new Paho.MQTT.Message(value_msg);
+        message.destinationName = value_topic;// "AllClientTopic20170616";
+        client.send(message);
+        console.log("jsSendMsg!");
+      }
+      //////////////////////////////////////////
+
+    </script>
+  </head>
+  <body>
+<form action="/login" method="post">
+      name:<input type="text" name="name">
+      phone:<input type="password" name="phone">
+      <br>
+      <input type="submit" value="addInDb" name="submit">
+      <input type="submit" value="delAllDb" name="submit">
+
+    </form>
+    <br>
+    <hr>
+    <br>
+    <form action="/login" method="post">
+      Topic:<input type="text" name="topic" size="15" id="topic"
+        value="test"
+        onfocus="if (this.value=='ServerAimobile20170616')this.value=''" 
+        onblur="if (this.value=='')this.value='ServerAimobile20170616'">
+      Msg:<input type="text" name="msg" id="msg">
+      <br>
+      <input type="submit" value="SendByGolang" name="submit">
+
+    </form>      
+      <button id="btnConvert"  onclick="FunctionSendMsgToGolang(document.getElementById('topic').value,  document.getElementById('msg').value  );">
+        SendByJs</button>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!--<input id="clickMe" type="button" value="clickme" onclick="FunctionSendMsgToGolang();" />-->
+    <!--<button id="btnConvert" onclick="FunctionSendMsgToGolang(); alert('call func!');">
+      FunctionSendMsgToGolang
+    </button>-->
+
+  </body>
+</html>

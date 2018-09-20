@@ -1,0 +1,91 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BinaryToDicimal	webtest.go	/^func BinaryToDicimal(s string) string{$/;"	f
+CheckDeivceStatus	webtest.go	/^func CheckDeivceStatus(devicetime string)string{$/;"	f
+CheckUserDuedate	webtest.go	/^func CheckUserDuedate(UserDuedate string) string{$/;"	f
+Command	webtest.go	/^type Command struct {$/;"	t
+Company	webtest.go	/^type Company struct{$/;"	t
+CountNum	aimgolib/mongo/mongo.go	/^func CountNum(c *mgo.Collection) (int, error) {$/;"	f
+Decrypt	aimgolib/encrypt/aes.go	/^func Decrypt(str string) string {$/;"	f
+DeviceStatus	aimgolib/mqtt/mqtt.go	/^func DeviceStatus(id, devicename,arAgentVer,  devModel string){$/;"	f
+Devices	aimgolib/mqtt/mqtt.go	/^type Devices struct {$/;"	t
+Devices	webtest.go	/^type Devices struct {$/;"	t
+DicimalToBinary	webtest.go	/^func DicimalToBinary(s string) string{$/;"	f
+Encrypt	aimgolib/encrypt/aes.go	/^func Encrypt(str string) string {$/;"	f
+GetCompanyName	webtest.go	/^func GetCompanyName(CompanyID string)string{$/;"	f
+GetLogDays	webtest.go	/^func GetLogDays(days,logtimes string) string{$/;"	f
+GetPermission	webtest.go	/^func GetPermission(numPermission string,Permission string) string {$/;"	f
+GetScheduleTask	webtest.go	/^func GetScheduleTask(){$/;"	f
+GetSubscriber	aimgolib/mqtt/mqtt.go	/^func GetSubscriber(deviceid string)string{$/;"	f
+Init	aimgolib/mongo/mongo.go	/^func Init(database, table string) (*mgo.Session, *mgo.Collection) {$/;"	f
+Initialization	aimgolib/mqtt/mqtt.go	/^func Initialization(FilePath string) {$/;"	f
+Insert	aimgolib/mongo/mongo.go	/^func Insert(c *mgo.Collection, insert ...interface{}) (err error) {$/;"	f
+IsConnect	aimgolib/mqtt/mqtt.go	/^func IsConnect() bool {$/;"	f
+Log	aimgolib/mqtt/mqtt.go	/^type Log struct {$/;"	t
+Log	webtest.go	/^type Log struct {$/;"	t
+LoginAuth	webtest.go	/^func LoginAuth(username, password string) smtp.Auth {$/;"	f
+Men	webtest.go	/^type Men struct {$/;"	t
+Mqtt_pub	aimgolib/mqtt/mqtt.go	/^func Mqtt_pub(mTopic string, mMsg string) {$/;"	f
+Mqtt_pubc	aimgolib/mqtt/mqtt.go	/^func Mqtt_pubc(client MQTT.Client, mTopic string, mMsg string) {$/;"	f
+Mqtt_sub	aimgolib/mqtt/mqtt.go	/^func Mqtt_sub(mTopic string) {$/;"	f
+Next	webtest.go	/^func (a *loginAuth) Next(fromServer []byte, more bool) ([]byte, error) {$/;"	f
+Person	aimgolib/mqtt/mqtt.go	/^type Person struct {$/;"	t
+Person	webtest.go	/^type Person struct {$/;"	t
+Remove	aimgolib/mongo/mongo.go	/^func Remove(c *mgo.Collection, query interface{}) error {$/;"	f
+RemoveAll	aimgolib/mongo/mongo.go	/^func RemoveAll(c *mgo.Collection, query interface{}) (*mgo.ChangeInfo, error) {$/;"	f
+Schedule	webtest.go	/^type Schedule struct{$/;"	t
+Select	aimgolib/mongo/mongo.go	/^func Select(c *mgo.Collection, query interface{}) *mgo.Query {$/;"	f
+SetDevices	aimgolib/mqtt/mqtt.go	/^func SetDevices(id, devNAME, arAgentVer, devModel string){	$/;"	f
+SetLogInfo	webtest.go	/^func SetLogInfo(Company, Name, Target, Command, Content, From string){$/;"	f
+SetMessageLogInfo	webtest.go	/^func SetMessageLogInfo(Company, Name, Target, Title, Command, Content, Type, View, Scheduleid, From string){$/;"	f
+SetSchedulePicker	webtest.go	/^func SetSchedulePicker(){$/;"	f
+Start	webtest.go	/^func (a *loginAuth) Start(server *smtp.ServerInfo) (string, []byte, error) {$/;"	f
+Update	aimgolib/mongo/mongo.go	/^func Update(c *mgo.Collection, selector interface{}, update interface{}) error {$/;"	f
+UpdateAll	aimgolib/mongo/mongo.go	/^func UpdateAll(c *mgo.Collection, selector interface{}, update interface{}) (*mgo.ChangeInfo, error) {$/;"	f
+VerifyEmail	webtest.go	/^func VerifyEmail(email string, UserCompany string, UserName string)string{$/;"	f
+acollection	aimgolib/mqtt/mqtt.go	/^var acollection *mgo.Collection$/;"	v
+acollection	webtest.go	/^var acollection *mgo.Collection$/;"	v
+aes	aimgolib/encrypt/aes.go	/^package aes$/;"	p
+aesDecrypt	aimgolib/encrypt/aes.go	/^func aesDecrypt(crypted, key []byte) ([]byte, error) {$/;"	f
+aesEncrypt	aimgolib/encrypt/aes.go	/^func aesEncrypt(origData, key []byte) ([]byte, error) {$/;"	f
+bcollection	aimgolib/mqtt/mqtt.go	/^var bcollection *mgo.Collection$/;"	v
+bcollection	webtest.go	/^var bcollection *mgo.Collection$/;"	v
+broker	aimgolib/mqtt/mqtt.go	/^var broker, id, user, password, topic, message, store, payload *string$/;"	v
+ccollection	webtest.go	/^var ccollection *mgo.Collection$/;"	v
+cleansess	aimgolib/mqtt/mqtt.go	/^var cleansess = false$/;"	v
+client	aimgolib/mqtt/mqtt.go	/^var client MQTT.Client$/;"	v
+collection	aimgolib/mqtt/mqtt.go	/^var collection *mgo.Collection$/;"	v
+collection	webtest.go	/^var collection *mgo.Collection$/;"	v
+dcollection	webtest.go	/^var dcollection *mgo.Collection$/;"	v
+getCode	webtest.go	/^func getCode(data string) string{$/;"	f
+http	aimgolib/mongo/mongo.go	/^var http string$/;"	v
+id	aimgolib/mqtt/mqtt.go	/^var broker, id, user, password, topic, message, store, payload *string$/;"	v
+init	webtest.go	/^func init() {$/;"	f
+key	aimgolib/encrypt/aes.go	/^var key = []byte("The_key!The_key!")$/;"	v
+login	webtest.go	/^func login(w http.ResponseWriter, r *http.Request) {$/;"	f
+loginAuth	webtest.go	/^type loginAuth struct {$/;"	t
+main	webtest.go	/^func main() {$/;"	f
+main	webtest.go	/^package main$/;"	p
+message	aimgolib/mqtt/mqtt.go	/^var broker, id, user, password, topic, message, store, payload *string$/;"	v
+mongo	aimgolib/mongo/mongo.go	/^package mongo$/;"	p
+mqtt	aimgolib/mqtt/mqtt.go	/^package mqtt$/;"	p
+pKCS5Padding	aimgolib/encrypt/aes.go	/^func pKCS5Padding(ciphertext []byte, blockSize int) []byte {$/;"	f
+pKCS5UnPadding	aimgolib/encrypt/aes.go	/^func pKCS5UnPadding(origData []byte) []byte {$/;"	f
+password	aimgolib/mqtt/mqtt.go	/^var broker, id, user, password, topic, message, store, payload *string$/;"	v
+payload	aimgolib/mqtt/mqtt.go	/^var broker, id, user, password, topic, message, store, payload *string$/;"	v
+qos	aimgolib/mqtt/mqtt.go	/^var qos *int$/;"	v
+randInt	webtest.go	/^func randInt(min int, max int) int {$/;"	f
+randomString	webtest.go	/^func randomString(l int) string {$/;"	f
+readConfig	aimgolib/mongo/mongo.go	/^func readConfig() {$/;"	f
+readConfig	aimgolib/mqtt/mqtt.go	/^func readConfig(FilePath string) {$/;"	f
+smtpmail	webtest.go	/^func smtpmail(email string, UserCompany string, UserName string) string{$/;"	f
+smtpresetpass	webtest.go	/^func smtpresetpass(email string, UserCompany string, UserName string) string{$/;"	f
+store	aimgolib/mqtt/mqtt.go	/^var broker, id, user, password, topic, message, store, payload *string$/;"	v
+topic	aimgolib/mqtt/mqtt.go	/^var broker, id, user, password, topic, message, store, payload *string$/;"	v
+user	aimgolib/mqtt/mqtt.go	/^var broker, id, user, password, topic, message, store, payload *string$/;"	v
+zeroPadding	aimgolib/encrypt/aes.go	/^func zeroPadding(ciphertext []byte, blockSize int) []byte {$/;"	f
+zeroUnPadding	aimgolib/encrypt/aes.go	/^func zeroUnPadding(origData []byte) []byte {$/;"	f

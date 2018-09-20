@@ -1,0 +1,11 @@
+action=sub
+broker=tcp://47.95.248.121:30012
+id=
+user=
+password=
+topic=
+payload=Start mMqttInit()
+qos=2
+cleansess=true
+num=3
+store=:memory:

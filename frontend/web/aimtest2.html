@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script language=JavaScript src="assets/mqtt/mqttws31.js"></script>
+    <script>
+      console.log("start");
+
+      // Create a client instance
+      client = new Paho.MQTT.Client("47.95.248.121", Number(30013), "");
+
+      // set callback handlers
+      client.onConnectionLost = onConnectionLost;
+      client.onMessageArrived = onMessageArrived;
+
+      // connect the client
+      client.connect({onSuccess:onConnect});
+
+
+      // called when the client connects
+      function onConnect() {
+        // Once a connection has been made, make a subscription and send a message.
+        console.log("onConnect");
+        client.subscribe("jsAddress");
+      }
+
+      // called when the client loses its connection
+      function onConnectionLost(responseObject) {
+        if (responseObject.errorCode !== 0) {
+          console.log("onConnectionLost:"+responseObject.errorMessage);
+        }
+      }
+
+      // called when a message arrives
+      function onMessageArrived(message) {
+        console.log("onMessageArrived:"+message.payloadString);
+      }
+
+      function FunctionSendMsgToGolang(value_topic ,value_msg) {
+        message = new Paho.MQTT.Message(value_msg);
+        message.destinationName = value_topic;// "AllClientTopic20170616";
+        client.send(message);
+        console.log("jsSendMsg!");
+      }
+
+      function submitDB(sub) {
+        var postdata = {submit: sub};
+        if ( sub === "addInDb" ) {
+                postdata = {
+                        name: document.getElementById("name").value,
+                        phone: document.getElementById("phone").value,
+                        submit: sub
+                }
+        }
+
+        $.post("http://10.130.16.116:9090",
+        postdata,
+        function(data,status){
+        document.getElementById("name").value = "";
+        document.getElementById("phone").value = "";
+            $("#result").html(data);
+        });
+
+     }
+    function SendByGolang(value_topic ,value_msg) {
+
+        var postdata = {
+                        topic: document.getElementById("topic").value,
+                        msg: document.getElementById("msg").value,
+                        submit: "SendByGolang"
+                }
+        
+
+        $.post("http://10.130.16.34:9090",
+        postdata,
+        function(data,status){
+            // $("#result").html(data);
+        });
+
+    }
+
+    </script>
+  </head>
+  <body>
+    NAME:<input type="text" id="name"> <br>
+    PHONE:<input type="password" id="phone"> <br>
+    <input type="submit" value="addInDb" onclick="submitDB('addInDb')">
+    <input type="button" value="delAllDb" onclick="submitDB('delAllDb')">
+  
+    <br>
+    <hr>
+    <br>
+
+
+    Topic:<input type="text" name="topic" size="15" id="topic"
+      value="ServerAimobile20170616"
+      onfocus="if (this.value=='ServerAimobile20170616')this.value=''" 
+      onblur="if (this.value=='')this.value='ServerAimobile20170616'">
+    Msg:<input type="text" name="msg" id="msg">
+    <br>
+    <input type="submit" value="SendByGolang" name="submit" onclick="SendByGolang(document.getElementById('topic').value,  document.getElementById('msg').value  );">
+
+    <!-- <button id="btnConvert"  onclick="SendByGolang(document.getElementById('topic').value,  document.getElementById('msg').value  );"> SendByJs</button>-->
+
+    <button id="btnConvert"  onclick="FunctionSendMsgToGolang(document.getElementById('topic').value,  document.getElementById('msg').value  );">
+      SendByJs</button>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <div id="result"></div>
+  </body>
+</html>
+

@@ -1,0 +1,47 @@
+version: '2'
+services:
+    mongos-shard:
+        container_name: "mongos-shard"
+        image: mongos_router
+        network_mode: aim-mongo-cluster
+        ports:
+            - "27017:27017"
+        depends_on:
+            - "mongo-setup"
+            - "mongo-conf-setup"
+        links:
+            - mongo-conf-1:mongo-conf-1
+            - mongo-conf-2:mongo-conf-2
+            - mongo-conf-3:mongo-conf-3
+            - mongo-1:mongo-1
+            - mongo-2:mongo-2
+            - mongo-3:mongo-3
+#        command: mongos --configdb conf-serv/mongo-conf-1:27017,mongo-conf-2:27017,mongo-conf-3:27017
+        environment:
+            - replSet=aim-mongo-conf
+        volumes:
+            - ../router/run.sh:/run.sh        
+        restart: always
+
+    mongo-shard-setup:
+        container_name: "mongo-shard-setup"
+        image: mongos_router
+        network_mode: aim-mongo-cluster
+        depends_on:
+            - "mongos-shard"
+        links:
+            - mongos-shard:mongos-shard
+        volumes:
+            - ./scripts:/scripts
+        environment: 
+            - MONGOS=47.95.248.121
+            - MONGO1=47.95.248.121
+            - MONGO2=47.95.248.121
+            - MONGO3=47.95.248.121
+            - RS=aim-mongo
+            - PORT=27017
+            - PORT1=31001
+            - PORT2=31002
+            - PORT3=31003
+        entrypoint: [ "/scripts/init-shard.sh" ]
+        restart: on-failure:20

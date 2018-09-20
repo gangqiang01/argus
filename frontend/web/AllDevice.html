@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>AIM Android RCP</title>
+	<link rel="icon" href="http://www.aimobile.com.tw/wp-content/uploads/2016/09/cropped-AIMobile-icon-1-32x32.png" sizes="32x32">
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<link rel='stylesheet prefetch' href='assets/font-awesome-4.7.0/css/font-awesome.min.css'>
+    <!-- FONT AWESOME STYLE  -->
+    
+	<!-- DATATABLE STYLE  -->
+    <!--<link href="assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />-->
+	<!-- <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script> -->
+	<script src="https://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+	
+	<!-- Alert Notification -->
+	<script src="assets/js/jquery.numpad.js"></script>
+	<link rel="stylesheet" href="assets/css/jquery.numpad.css">
+	<link rel="stylesheet" href="assets/css/command-search.css">
+	<link href="assets/css/bootstrap-tagsinput.css" rel="stylesheet">
+	<!-- Alert Notification -->
+	
+	<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" type='text/css'/>
+	<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular-animate.min.js"></script>
+	<script src="assets/js/ui-bootstrap-tpls-0.14.0.js"></script>
+	<!-- datatables select v -->
+	<link href="https://cdn.datatables.net/select/1.2.2/css/select.dataTables.min.css" rel="stylesheet" type='text/css'/>
+    <!-- CUSTOM STYLE  -->
+	
+	<script src="assets/js/p5.min.js" type='text/javascript'></script>
+	
+	<script src="assets/js/watch.js"></script>
+	<!--numpad -->
+	
+	
+	
+	<!-- One drive api -->
+	<!-- <script type="text/javascript" src="https://js.live.net/v7.2/OneDrive.js"></script>  -->
+	<!-- <script> -->
+	<!-- function launchOneDrivePicker(){ -->
+		<!-- var odOptions = { clientId: "INSERT-APP-ID-HERE", -->
+		  <!-- action: "query", -->
+		  <!-- multiSelect: true, -->
+		  <!-- advanced: {}, -->
+		  <!-- success: function(files) { /* success handler */ }, -->
+		  <!-- cancel: function() { /* cancel handler */ }, -->
+		  <!-- error: function(e) { /* error handler */ }}; -->
+		<!-- OneDrive.open(odOptions); -->
+	<!-- } -->
+	<!-- </script> -->
+	<!-- One drive api -->
+	
+	<!-- google drive api-->
+	
+	
+	<!-- google drive api-->
+	
+	<link href="assets/css/AllDevice.css" rel="stylesheet" />	
+    <link href="assets/css/style.css" rel="stylesheet" />
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link href="assets/css/select.dataTables.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-tagsinput.css" rel="stylesheet">
+	
+    <!-- GOOGLE FONT -->
+   
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.css' rel='stylesheet' type='text/css' />
+	
+	<script src="assets/js/aes.js"></script>	
+	<script src="assets/js/userpermissions.js" type='text/javascript'></script>
+	<script src="assets/js/command.js" type='text/javascript'></script>
+	<script language=JavaScript src="assets/mqtt/mqttws31.js"></script>
+	<script src="assets/js/mqtt_client.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.js"></script>
+	
+	
+	<script src="assets/js/AllDevice.js"></script> 
+	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+</head>
+<body id="CookieListener">
+	
+    <div class="navbar-fixed-top"></div>
+     <!-- MENU SECTION END-->
+    <div class="content-wrapper" >
+         <div class="container">
+        <div class="row pad-botm">
+            <div class="col-md-12">
+                <h4 class="header-line">Device Management</h4>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-md-8 col-sm-7 panel-devices-col">
+                    <!-- Advanced Tables -->
+				
+   
+                    <div class="panel panel-default panel-devices" id="deviceinfo">
+                        <div class="panel-heading">
+                            All Devices
+								<div class="btn-group pull-right btn-filter">
+									<button class="btn btn-default " onclick="AllSelect()">Select All</button>
+                                    <button class="btn btn-default " onclick="AllCancel()">Deselect All </button>
+								</div>
+                        </div>
+							 <link rel="import" href="test2.html">
+							 
+                        <div class="panel-body" >
+                            <div class="table-responsive">
+								
+                                <table class="display responsive nowrap" cellspacing="0" width="100%" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+											<th></th>
+                                            <th>Device ID</th>
+											<th>Device Name</th>
+                                            <th>Agent Version</th>
+                                            <th>Device Model</th>
+											<th>Status</th>
+											<th>Details</th>
+                                            <th>Group</th>
+                                            <th>Binduser</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="list">
+											
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+					<div class="panel panel-danger navbar-fixed-bottom" style="margin-bottom:0px;">
+                        <div class="panel-heading panel-logs" style="text-align:center;">
+                            <div style="float:left;">
+								Logs
+							</div>
+							<div style="display: inline-block; margin:0 auto;"><span class="clickable"><i class="fa fa-angle-double-up fa-2x"></i></span></div>
+							<div id="days" class="btn-group pull-right" style="float:right;">
+								<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="daysRecord" ></button>
+								<ul class="dropdown-menu">
+									<li><a href="javascript: void(0)" onclick="GetLogInfo(3)" value="Three days ago">Three days ago</a></li>
+									<li class="divider"></li>
+									<li><a href="javascript: void(0)" onclick="GetLogInfo(7)" value="One week ago">One week ago</a></li>
+									<li class="divider"></li>
+									<li><a href="javascript: void(0)" onclick="GetLogInfo(30)" value="One month ago">One month ago</a></li>
+									<li class="divider"></li>
+									<li><a href="javascript: void(0)" onclick="GetLogInfo(182)" value="Half a year ago">Half a year ago</a></li>
+								</ul>
+								
+							</div>
+							
+                        </div>
+                        <div class="panel-body" id="LogBody">
+							<i id="log-spinner" class="fa fa-spinner fa-5x fa-spin log-spinner" aria-hidden="true" style="z-index:1003; display:none;"></i>
+							<table id="LogTable" class="display" cellspacing="0" width="100%">
+								<thead>
+									<tr>
+										<th>Time</th>
+										<th>Name</th>
+										<th>Device</th>
+										<th>Command</th>
+										<th>Content</th>
+									</tr>
+								</thead>
+								<tbody>	
+									
+								</tbody>
+							</table>
+							
+                        </div>
+						
+                    </div>
+					<button id="btn-device-add" type="button" class="btn btn-danger btn-circle btn-xl" style="display:none;"><i class="fa fa-plus-square"></i></button>
+                    <!--End Advanced Tables -->
+                </div>
+				
+				<ul class="command-tags" style="right:0;position:fixed;bottom:15%;">
+					<li><a href="#" class="command-tag command-tag-green">Edit group</a></li>
+					<li><a href="#" class="command-tag command-tag-red" >Set command</a></li>
+					<li><a href="#" class="command-tag command-tag-yellow">Update devices</a></li>
+				</ul>
+				<div class="col-md-4 col-sm-5 panel-command-col" style="position:fixed;right:0;top:20%">
+					<div class="panel panel-default">
+						
+                        <div class="panel-heading panel-commands">
+							Command
+							<span class="command-clickable pull-right"><i class="fa fa-angle-double-right fa-2x"></i></span>
+                        </div>
+						
+                        <div class="panel-body">
+                            <ul class="nav nav-tabs" style="padding-left: 0px;">
+                                <li class="active" style="width:33.33%;text-align:center;"><a href="#category" data-toggle="tab" style="padding: 10px 0.4em 10px 0.4em;font-size: 0.5em;">Category</a>
+                                </li>
+                                <li class="" style="width:33.33%;text-align:center;"><a href="#alphabet" data-toggle="tab" style="padding: 10px 0.4em 10px 0.4em;font-size: 0.5em;">Alphabet</a>
+                                </li>
+                                <li class="" style="width:33.33%;text-align:center;"><a href="#frequency" data-toggle="tab" style="padding: 10px 0.4em 10px 0.4em;font-size: 0.5em;">frequency</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade active in rcpfunc" id="category" >
+                                    <div class="left-sidebar">
+										<h2>Feature</h2>
+										<input class="form-control search" type="text" id="search" placeholder="Search command" style="margin-bottom:2px;">
+										
+										<div class="panel-group category-products panel-scroll list" id="accordian"><!--category-productsr-->
+											
+											<div class="panel panel-default">
+												
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordian" href="#care">
+															<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+															Care
+														</a>
+													</h4>
+												</div>
+												<div id="care" class="panel-collapse collapse">
+													
+													<div class="panel-body">
+														<ul id="subCare" class="list">
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordian" href="#manage">
+															<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+															Manage
+														</a>
+													</h4>
+												</div>
+												<div id="manage" class="panel-collapse collapse">
+													
+													<div class="panel-body">
+														<ul id="subManage" class="list">
+															
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordian" href="#secure">
+															<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+															Secure
+														</a>
+													</h4>
+												</div>
+												<div id="secure" class="panel-collapse collapse">
+													
+													<div class="panel-body">
+														<ul id="subSecure" class="list">
+															
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordian" href="#extend">
+															<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+															Extend
+														</a>
+													</h4>
+												</div>
+												<div id="extend" class="panel-collapse collapse">
+													
+													<div class="panel-body">
+														<ul id="subExtend" class="list">
+															
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div><!--/category-products-->
+									</div>
+                                </div>
+                                <div class="tab-pane fade rcpfunc" id="alphabet">
+                                    <div class="left-sidebar">
+										<h2>A~Z</h2>
+										<div class="panel-group category-products panel-scroll" id="alphabetcategory"><!--category-productsr-->
+										
+										</div><!--/category-products-->
+									</div>
+								</div>
+                                <div class="tab-pane fade rcpfunc" id="frequency" >
+                                    <div class="left-sidebar">
+										<h2>Frequency</h2>
+										<div class="panel-group category-products panel-scroll" id="frequencyused"><!--category-productsr-->
+											
+										</div><!--/category-products-->
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+				</div>
+            </div>
+                <!-- /. ROW  -->
+				
+			
+    </div>
+    </div>
+				
+     <!-- CONTENT-WRAPPER SECTION END-->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                   &copy; 2017<a href="http://www.aimobile.com.tw/" target="_blank"  >Aimobile </a> |<a href="http://www.binarytheme.com/" target="_blank"  > Designed by : binarytheme.com</a> 
+                </div>
+
+            </div>
+        </div>
+    </section>
+      <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <!--<script src="assets/js/jquery-1.10.2.js"></script>-->
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/dataTables/jquery.dataTables.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/rowreorder/1.2.3/js/dataTables.rowReorder.min.js"></script>
+	<script src="https://cdn.datatables.net/responsive/2.2.0/js/dataTables.responsive.min.js"></script>
+	<script src="assets/js/dataTables.scroller.js"></script>
+	<script src="assets/js/bootstrap-tagsinput.js"></script>
+	<script src="assets/js/BootstrapMenu.min.js"></script>
+	<script src="assets/js/timepicker.js"></script>
+</body>
+</html>
