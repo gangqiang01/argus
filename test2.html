@@ -1,0 +1,97 @@
+<div id="alert">
+	<script src="assets/js/jquery.numpad.js"></script>
+	<link rel="stylesheet" href="assets/css/jquery.numpad.css">
+	<link href="assets/css/bootstrap-tagsinput.css" rel="stylesheet">
+	
+	<script type="text/javascript">
+			// Set NumPad defaults for jQuery mobile. 
+			// These defaults will be applied to all NumPads within this document!
+			$.fn.numpad.defaults.gridTpl = '<table class="table modal-content"></table>';
+			$.fn.numpad.defaults.backgroundTpl = '<div class="modal-backdrop in"></div>';
+			$.fn.numpad.defaults.displayTpl = '<input type="text" class="form-control" />';
+			$.fn.numpad.defaults.buttonNumberTpl =  '<button type="button" class="btn btn-default"></button>';
+			$.fn.numpad.defaults.buttonFunctionTpl = '<button type="button" class="btn" style="width: 100%;"></button>';
+			$.fn.numpad.defaults.onKeypadCreate = function(){$(this).find('.done').addClass('btn-primary');};
+			
+			// Instantiate NumPad once the page is ready to be shown
+			
+	</script>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel"></h4>
+				</div>
+				<div id="AlertMsgEvent" class="modal-event" style = "display:none">
+				</div>
+				<style>.cursor-pointer{
+					cursor: pointer !important;
+				}</style>
+				<div id="AlertMsgTools" class="modal-tools" style = "display:none">
+					<div id="EnterPassword" class="form-group" style="display:none;">
+						<input type="password" class="form-control cursor-pointer" id="password" placeholder="Please enter the password :">
+					</div>
+					<script>
+						$('#password').numpad({
+							displayTpl: '<input class="form-control cursor-pointer" type="password" />',
+							hidePlusMinusButton: true,
+							hideDecimalButton: true	
+						});
+					</script>
+					
+					
+					<div id="timepicker" style="display:none;" ng-app="mwl.calendar.docs">
+						<div ng-controller="TimepickerDemoCtrl">
+							<p class="input-group">
+							  <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="popup.opened" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+							  <span class="input-group-btn">
+								<button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+							  </span>
+							</p>
+							<uib-timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></uib-timepicker>													
+						</div>
+					</div>
+					
+					
+					
+				</div>
+				<div id="AlertMsgBody" class="modal-body">
+				
+					<script>
+					
+						function SliderShow(){
+							// Without JQuery
+							var slider = new Slider('#ex1', {
+								formatter: function(value) {
+									return 'Current value: ' + value;
+								}
+							});
+						}
+						
+					</script>
+					
+				</div>
+				<div class="modal-footer" id="AlertMsgFooter">
+					<button id="CancelBtn" type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
+					<button id="AlertMsgBtn"type="button" style = "display:none" class="btn btn-primary" data-dismiss="modal" >ok</button>
+					<button id="ShowInfoBtn"type="button" class="btn btn-primary" style = "display:none">ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+							
+</div>
+	
+	<script>  
+		// thisDoc refers to the "importee", which is blog-post.html
+		var thisDoc = document.currentScript.ownerDocument;
+
+		// thatDoc refers to the "importer", which is index.html
+		var thatDoc = document;
+
+	  // grab the contents of the #blog-post from this document
+	  // and append it to the importing document.
+	  var content = thisDoc.querySelector('#alert');
+	  thatDoc.body.appendChild(thatDoc.importNode(content, true));
+	</script>  
