@@ -1,0 +1,1157 @@
+{
+  
+    "1": [
+        {"CommTitle": "Get Devices"},
+        {"Enabled": "true"},
+        {"Comm": "get devices"},
+        {"Param": "null"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-tablet"}
+    ],
+    "2": [
+      
+        {"CommTitle": "Set Volume"},
+        {"Enabled": "true"},
+        {"Comm": "soundSet"},
+        {"Param": "170"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-volume-up"}
+      
+    ],
+    "3": [
+      
+        {"CommTitle": "Silent"},
+        {"Enabled": "true"},
+        {"Comm": "soundSet"},
+        {"Param": "0"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-volume-off"}
+      
+    ],
+    "4": [
+      
+        {"CommTitle": "Get Coordinates"},
+        {"Enabled": "true"},
+        {"Comm": "gps-"},
+        {"Param": "null"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+    "5": [
+      
+        {"CommTitle": "Lock Devices"},
+        {"Enabled": "true"},
+        {"Comm": "admin"},
+        {"Param": "1234"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-lock"}
+      
+    ],
+    "6": [
+      
+        {"CommTitle": "Factory Reset"},
+        {"Enabled": "true"},
+        {"Comm": "admin wipe"},
+        {"Param": "null"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-exclamation-triangle"}
+      
+    ],
+    "7": [
+      
+        {"CommTitle": "Download File"},
+        {"Enabled": "true"},
+        {"Comm": "downloadFile"},
+        {"Param": "" },
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-download"}
+      
+    ],
+    "8": [
+      
+        {"CommTitle": "Silent Install"},
+        {"Enabled": "true"},
+        {"Comm": "installAllAPK-"},
+        {"Param": "null"},
+        {"Resultdelay": "0"},
+        {"Path": "http://ws2.aimobile.com.tw/download/com.serviceapp.aimsysalarm_v0.24-0210.apk;;;com.serviceapp.aimsysalarm_v0.24-0210.apk@%@http://ws2.aimobile.com.tw/download/chuangyipinghengqiu_1.apk;;;chuangyipinghengqiu_1.apk"},
+		{"Icon": "fa-cloud-download"}
+      
+    ],
+    "9": [
+      
+        {"CommTitle": "Silent Uninstall"},
+        {"Enabled": "true"},
+        {"Comm": "uninstall"},
+        {"Param": "com.andregal.android.hqbzj"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-scissors"}
+      
+    ],
+    "10": [
+      
+        {"CommTitle": "Launch APP"},
+        {"Enabled": "false"},
+        {"Comm": "launchAPP-"},
+        {"Param": "1;;;2000;;;10;;;10"},
+        {"Resultdelay": "0"},
+        {"Path": "com.andregal.android.hqbzj@%@com.andregal.android.ballroll.gui.StartActivity"},
+		{"Icon": "fa-hand-o-right"}
+      
+    ],
+    "11": [
+      
+        {"CommTitle": "Change APN"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": "setting;;中華電信(Chunghwa);;emome;; ;; ;; ;; ;;466;;01"},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.argus_apn@%@com.aimobile.argus_apn.MainActivity"},
+		{"Icon": "fa-tablet"}
+      
+    ],
+    "12": [
+      
+        {"CommTitle": "Get APN"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": "getAPN"},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.argus_apn@%@com.aimobile.argus_apn.MainActivity"},
+		{"Icon": "fa-hand-paper-o"}
+      
+    ],
+    "13": [
+      
+        {"CommTitle": "Get System Version"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": "null"},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.serivceapp.getdevicever@%@com.aimobile.serivceapp.getdevicever.MainActivity"},
+		{"Icon": "fa-hand-paper-o"}
+      
+    ],
+    "14": [
+      
+        {"CommTitle": "Enable Location Monitor"},
+        {"Enabled": "false"},
+        {"Comm": "launchAPP-"},
+        {"Param": "start:10:5"},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.locationarealimit@%@com.aimobile.locationarealimit.MainActivity"},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+    "15": [
+      
+        {"CommTitle": "Add Restrict Area"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": "addLimitArray:台北市;士林區;前港里"},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.locationarealimit@%@com.aimobile.locationarealimit.MainActivity"},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+    "16": [
+      
+        {"CommTitle": "Delete Restrict Area"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": "delLimitArray:台北市;士林區;前港里"},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.locationarealimit@%@com.aimobile.locationarealimit.MainActivity"},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+    "17": [
+      
+        {"CommTitle": "Disable Location Monitor"},
+        {"Enabled": "false"},
+        {"Comm": "launchAPP-"},
+        {"Param": "stop"},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.locationarealimit@%@com.aimobile.locationarealimit.MainActivity"},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+    "18": [
+      
+        {"CommTitle": "Get Restrict Area List"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": "getLimitArray"},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.locationarealimit@%@com.aimobile.locationarealimit.MainActivity"},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+    "19": [
+      
+        {"CommTitle": "set Time Zone"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": "SetZone;;Asia/Taipei"},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.settimer@%@com.aimobile.settimer.MainActivity"},
+		{"Icon": "fa-map-o"}
+      
+    ],
+    "20": [
+      
+        {"CommTitle": "Set Time"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": "SetData;;2017/1/10;;SetTime;;12:59:33"},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.settimer@%@com.aimobile.settimer.MainActivity"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+    "21": [
+      
+        {"CommTitle": "Unlock Devices"},
+        {"Enabled": "true"},
+        {"Comm": "admin"},
+        {"Param": "reset"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-unlock"}
+      
+    ],
+    "22": [
+      
+        {"CommTitle": "Set Brightness"},
+        {"Enabled": "true"},
+        {"Comm": "brightness"},
+        {"Param": "255"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-sun-o"}
+      
+    ],
+    "23": [
+      
+        {"CommTitle": "Test Flight Mode"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": "null"},
+        {"Resultdelay": "0"},
+        {"Path":"com.aimobile.flightmodetest@%@com.aimobile.flightmodetest.MainActivity"},
+		{"Icon": "fa-tablet"}
+      
+    ],
+    "24": [
+      
+        {"CommTitle": "Silent Test"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": ""},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.serivceapp.aimsilenttest@%@com.aimobile.serivceapp.aimsilenttest.MainActivity"},
+		{"Icon": "fa-tablet"}
+      
+    ],
+    "25": [
+      
+        {"CommTitle": "Enable Battery Info"},
+        {"Enabled": "false"},
+        {"Comm": "launchAPP-"},
+        {"Param": ""},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.batteryinfo@%@com.aimobile.batteryinfo.MainActivity"},
+		{"Icon": "fa-battery-full"}
+      
+    ],
+    "26": [
+      
+        {"CommTitle": "Disable Battery Info"},
+        {"Enabled": "false"},
+        {"Comm": "launchAPP-"},
+        {"Param": "requireStopApp"},
+        {"Resultdelay": "0"},
+        {"Path": "com.aimobile.batteryinfo@%@com.aimobile.batteryinfo.MainActivity"},
+		{"Icon": "fa-battery-empty"}
+      
+    ],
+    "27": [
+      
+        {"CommTitle": "Enable System Status Monitor"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": "1;;;2000;;;10;;;10"},
+        {"Resultdelay": "0"},
+        {"Path": "com.serviceapp.aimsysalarm@%@com.serviceapp.aimsysalarm.MainActivity"},
+		{"Icon": "fa-eye"}
+      
+    ],
+    "28": [
+      
+        {"CommTitle": "Disable System Status Monitor"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+        {"Param": "requireStopAPP;;;1;;;2000;;;10"},
+        {"Resultdelay": "0"},
+        {"Path": "com.serviceapp.aimsysalarm@%@com.serviceapp.aimsysalarm.MainActivity"},
+		{"Icon": "fa-eye-slash "}
+      
+    ],
+    "29": [
+      
+        {"CommTitle": "WiFi AP Connect Allow"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+		{"Param": "add;;4:AIM:1"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-tablet"}
+      
+    ],
+    "30": [
+      
+        {"CommTitle": "WiFi AP Connect Deny"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+		{"Param": "add;;4:AIM:0"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-tablet"}
+      
+    ],
+    "31": [
+      
+        {"CommTitle": "BT Device Connect Allow"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+		{"Param": "add;;5:com.android.camera2:0"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+    "32": [
+      
+        {"CommTitle": "BT Device Connect Deny"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+		{"Param": "add;;5:com.android.camera2:0"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+    "33": [
+      
+        {"CommTitle": "Enable Mobile Data"},
+        {"Enabled": "false"},
+        {"Comm": "launchService-"},
+		{"Param": "EnableMobileData"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa fa-toggle-on"}
+      
+    ],
+    "34": [
+      
+        {"CommTitle": "Settings mobileData:off"},
+        {"Enabled": "false"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableMobileData"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa fa-toggle-off"}
+      
+    ],
+    "35": [
+      
+        {"CommTitle": "Settings dataRoaming:on"},
+        {"Enabled": "false"},
+        {"Comm": "launchService-"},
+		{"Param": "EnableDataRoaming"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa fa-toggle-on"}
+      
+    ],
+    "36": [
+      
+        {"CommTitle": "Settings dataRoaming:off"},
+        {"Enabled": "false"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableDataRoaming"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa fa-toggle-off"}
+      
+    ],
+	"37": [
+		
+		{"CommTitle": "App Launch Allow"},
+		{"Enabled": "true"},
+		{"Comm": "launchAPP-"},
+		{"Param": "add;;2:com.android.camera2:1"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-plus-square-o"}
+		
+	],
+	"38": [
+	  
+		{"CommTitle": "App Launch Deny"},
+		{"Enabled": "true"},
+		{"Comm": "launchAPP-"},
+		{"Param": "modify;;2:com.android.camera2:0"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-tablet"}
+	 
+	],
+	"39": [
+	  
+		{"CommTitle": "App Install Allow"},
+		{"Enabled": "true"},
+		{"Comm": "launchAPP-"},
+		{"Param": "modify;;1:com.android.camera2:1"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-tablet"}
+	 
+	],
+	"40": [
+		
+		{"CommTitle": "App Install Deny"},
+		{"Enabled": "true"},
+		{"Comm": "launchAPP-"},
+		{"Param": "delete;;1:com.android.camera2:0"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-times"}
+		
+	],
+	"41": [
+		
+		{"CommTitle": "Get IMEI"},
+		{"Enabled": "true"},
+		{"Comm": "getIMEI-"},
+		{"Param": ""},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-long-arrow-down"}
+		
+	],
+	"42": [
+		
+		{"CommTitle": "Shutdown"},
+		{"Enabled": "true"},
+		{"Comm": "launchService-"},
+		{"Param": "Shutdown"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-power-off"}
+		
+	],
+	"43": [
+		
+		{"CommTitle": "Reboot"},
+		{"Enabled": "true"},
+		{"Comm": "launchService-"},
+		{"Param": "Reboot"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-power-off"}
+		
+	],	
+	"44": [
+		
+		{"CommTitle": "FlightMode ON"},
+		{"Enabled": "true"},
+		{"Comm": "launchService-"},
+		{"Param": "EnableFlightMode"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-plane"}
+		
+	],
+	"45": [
+		
+		{"CommTitle": "FlightMode OFF"},
+		{"Enabled": "false"},
+		{"Comm": "launchService-"},
+		{"Param": "DisableFlightMode"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-plane"}
+		
+	],
+	"46": [
+		
+		{"CommTitle": "DeviceAdmin On"},
+		{"Enabled": "true"},
+		{"Comm": "launchService-"},
+		{"Param": "EnableDeviceAdministrator;;com.trendmicro.tmmspersonal.apac;;com.trendmicro.tmmssuite.featurelocker.receiver.TMMSDeviceAdminReceiver"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-hand-rock-o "}
+		
+	],
+	"47": [
+		
+		{"CommTitle": "DeviceAdmin Off"},
+		{"Enabled": "true"},
+		{"Comm": "launchService-"},
+		{"Param": "DisableDeviceAdministrator;;com.trendmicro.tmmspersonal.apac;;com.trendmicro.tmmssuite.featurelocker.receiver.TMMSDeviceAdminReceiver"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-hand-rock-o "}
+		
+	],	
+	"48": [
+		
+		{"CommTitle": "adb On"},
+		{"Enabled": "true"},
+		{"Comm": "launchService-"},
+		{"Param": "EnableAdb"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-toggle-on"}
+		
+	],
+	"49": [
+		
+		{"CommTitle": "adb Off"},
+		{"Enabled": "true"},
+		{"Comm": "launchService-"},
+		{"Param": "DisableAdb"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-toggle-off "}
+		
+	],	
+	"50": [
+		
+		{"CommTitle": "Hide Widget Page"},
+		{"Enabled": "true"},
+		{"Comm": "sysprop-"},
+		{"Param": "persist.cust.widgetpage.hide:true"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-long-arrow-down"}
+		
+	],
+	"51": [
+		
+		{"CommTitle": "Display Widget Page"},
+		{"Enabled": "true"},
+		{"Comm": "sysprop-"},
+		{"Param": "persist.cust.widgetpage.hide:false"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-arrows-v"}
+		
+	],
+	"52": [
+		
+		{"CommTitle": "Set Device Name"},
+		{"Enabled": "true"},
+		{"Comm": "launchService-"},
+		{"Param": "SetProperty;;persist.argus.devicename;;"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-keyboard-o"}
+		
+	],
+	"53": [
+		
+		{"CommTitle": "Send message"},
+		{"Enabled": "true"},
+		{"Comm": "sendMsgToDevice-"},
+		{"Param": ""},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-commenting-o"}
+		
+	],
+	"54": [
+		
+		{"CommTitle": "Enable Bluetooth"},
+		{"Enabled": "true"},
+		{"Comm": "setBT-"},
+		{"Param": "TURN_ON_BT"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-bluetooth-b"}
+		
+	],
+	"55": [
+		
+		{"CommTitle": "Disable Bluetooth"},
+		{"Enabled": "true"},
+		{"Comm": "setBT-"},
+		{"Param": "TURN_OFF_BT"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-bluetooth-b"}
+		
+	],
+	"56": [
+		
+		{"CommTitle": "Enable Wifi"},
+		{"Enabled": "false"},
+		{"Comm": "setWIFI-"},
+		{"Param": "TURN_ON_WIFI"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-wifi"}
+		
+	],
+	"57": [
+		
+		{"CommTitle": "Disable Wifi"},
+		{"Enabled": "true"},
+		{"Comm": "setWIFI-"},
+		{"Param": "TURN_OFF_WIFI"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-wifi"}
+		
+	],
+	"58": [
+		
+		{"CommTitle": "Get root status"},
+		{"Enabled": "true"},
+		{"Comm": "checkRoot-"},
+		{"Param": "null"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-info"}
+		
+	],
+	"59": [
+		
+		{"CommTitle": "Get top activity"},
+		{"Enabled": "true"},
+		{"Comm": "getTopActivity-"},
+		{"Param": "null"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-file-o"}
+		
+	],
+	"60": [
+		
+		{"CommTitle": "Get running services"},
+		{"Enabled": "true"},
+		{"Comm": "getRunningServices-"},
+		{"Param": "null"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-files-o"}
+		
+	],
+	"61": [
+		
+		{"CommTitle": "Terminate process"},
+		{"Enabled": "true"},
+		{"Comm": "terminateProcess-"},
+		{"Param": ""},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-window-close-o"}
+		
+	],
+	"62": [
+		
+		{"CommTitle": "Restart AIM Android client"},
+		{"Enabled": "true"},
+		{"Comm": "restartagent-"},
+		{"Param": "null"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-repeat"}
+		
+	],
+	"63": [
+		
+		{"CommTitle": "Camera disable(UserBuild)"},
+		{"Enabled": "true"},
+		{"Comm": "admin disableCamera"},
+		{"Param": "1"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-camera-retro"}
+		
+	],
+	"64": [
+		
+		{"CommTitle": "Camera enable(UserBuild)"},
+		{"Enabled": "true"},
+		{"Comm": "admin disableCamera"},
+		{"Param": "888"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-camera-retro"}
+		
+	],
+	"65": [
+      
+        {"CommTitle": "Download Ftp File"},
+        {"Enabled": "true"},
+        {"Comm": "downloadFtpFile"},
+        {"Param": "帳號;;;密碼;;;ftp位置;;;檔名"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-download"}
+      
+    ],
+	"66": [
+		
+		{"CommTitle": "Get Coordinates times & interval"},
+		{"Enabled": "true"},
+		{"Comm": "gpsHistory-"},
+		{"Param": "5;;;5"},
+		{"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-map-marker"}
+		
+	],
+	"67": [
+      
+        {"CommTitle": "Stop Coordinates times & interval"},
+        {"Enabled": "true"},
+        {"Comm": "gpsHistory-"},
+        {"Param": "0;;;5"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+	"68": [
+      
+        {"CommTitle": "Get Installed App List"},
+        {"Enabled": "false"},
+        {"Comm": "gpsHistory-"},
+        {"Param": "0;;;5"},
+        {"Resultdelay": "0"},
+		{"Path": ""},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+	"69": [
+      
+        {"CommTitle": "Enable GPS"},
+        {"Enabled": "true"},
+		{"Comm": "launchService-"},
+		{"Param": "EnableGPS"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+	"70": [
+      
+        {"CommTitle": "Disable GPS"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableGPS"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-map-marker"}
+      
+    ],
+	"71": [
+      
+        {"CommTitle": "Enable Unknown Sources"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "EnableUnknownSources"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-cogs"}
+      
+    ],
+	"72": [
+      
+        {"CommTitle": "Disable Unknown Sources"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableUnknownSources"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-cogs"}
+      
+    ],
+	"73": [
+      
+        {"CommTitle": "Enable Developer Option"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "EnableDeveloperOption"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-cogs"}
+      
+    ],
+	"74": [
+      
+        {"CommTitle": "Disable Developer Option"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableDeveloperOption"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-cogs"}
+      
+    ],
+	"75": [
+      
+        {"CommTitle": "Enable App"},
+        {"Enabled": "false"},
+        {"Comm": "launchService-"},
+		{"Param": "EnableApp;;"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-hand-o-up"}
+      
+    ],
+	"76": [
+      
+        {"CommTitle": "Disable App"},
+        {"Enabled": "false"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableApp;;"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-hand-o-down"}
+      
+    ],
+	"77": [
+      
+        {"CommTitle": "Enable Auto Time"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "EnableAutoTime"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"78": [
+      
+        {"CommTitle": "Disable Auto Time"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableAutoTime"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"79": [
+      
+        {"CommTitle": "Enable Auto Time Zone"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "EnableAutoTimeZone"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"80": [
+      
+        {"CommTitle": "Disable Auto Time Zone"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableAutoTimeZone"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"81": [
+      
+        {"CommTitle": "Enable Home Button"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "EnableHomeButton"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"82": [
+      
+        {"CommTitle": "Disable Home Button"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableHomeButton"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"83": [
+      
+        {"CommTitle": "Enable NFC"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "EnableNFC"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"84": [
+      
+        {"CommTitle": "Disable NFC"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableNFC"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"85": [
+      
+        {"CommTitle": "Install App"},
+        {"Enabled": "false"},
+        {"Comm": "launchService-"},
+		{"Param": "InstallApp"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"86": [
+      
+        {"CommTitle": "Uninstall App"},
+        {"Enabled": "false"},
+        {"Comm": "launchService-"},
+		{"Param": "UninstallApp;;"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"87": [
+      
+        {"CommTitle": "Enable Mobile Data"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "EnableMobileData"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"88": [
+      
+        {"CommTitle": "Disable Mobile Data"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableMobileData"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"89": [
+      
+        {"CommTitle": "Enable Data Roaming"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "EnableDataRoaming"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"90": [
+      
+        {"CommTitle": "Disable Data Roaming"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "DisableDataRoaming"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-clock-o"}
+      
+    ],
+	"91": [
+      
+        {"CommTitle": "Get Prohibit Install App"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+		{"Param": "getProhibitInstallList"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"92": [
+      
+        {"CommTitle": "Get Allow Install App"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+		{"Param": "getAllowInstallList"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"93": [
+      
+        {"CommTitle": "Get Prohibit Launch App"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+		{"Param": "getProhibitLaunchList"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"94": [
+      
+        {"CommTitle": "Get Allow Launch App"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+		{"Param": "getAllowLaunchList"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.blackwhitelistcontroller@%@com.aimobile.blackwhitelistcontroller.MainActivity"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"95": [
+      
+        {"CommTitle": "Set Property"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "SetProperty;;persist.cust.navigationbar.hide;;true"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"96": [
+      
+        {"CommTitle": "Get Property"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "GetProperty;;"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"97": [
+      
+        {"CommTitle": "Get All Package Name"},
+        {"Enabled": "false"},
+        {"Comm": "launchService-"},
+		{"Param": "getAllPackage-"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.android.packageStatusManager@%@android.intent.action.MAIN"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"98": [
+      
+        {"CommTitle": "Hide back button"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "SetProperty;;persist.cust.navi.back.hide;;true"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"99": [
+      
+        {"CommTitle": "Show back button"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "SetProperty;;persist.cust.navi.back.hide;;false"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"100": [
+      
+        {"CommTitle": "Get Peripheral Status"},
+        {"Enabled": "false"},
+        {"Comm": "launchAPP-"},
+		{"Param": ""},
+		{"Resultdelay": "0"},
+		{"Path": "tw.com.aimobile.getdevicestatus.getdevicestatus@%@tw.com.aimobile.getdevicestatus.getdevicestatus.MainActivity"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"101": [
+      
+        {"CommTitle": "Change Broker"},
+        {"Enabled": "true"},
+        {"Comm": "launchService-"},
+		{"Param": "ChangeBroker;;<broker address>;;<broker port>;;<svr-topic>;;<cln-topic>"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.shellcommand@%@android.intent.action.MAIN"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"101": [
+      
+        {"CommTitle": "OTA update"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+		{"Param": "ARGUSXML"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.ota@%@com.aimobile.ota.MainActivity"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"102": [
+      
+        {"CommTitle": "Get Wifi info"},
+        {"Enabled": "true"},
+        {"Comm": "launchAPP-"},
+		{"Param": "WiFi"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.android.getrssi@%@com.aimobile.android.getrssi.MainActivity"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"103": [
+      
+        {"CommTitle": "Get Bluetooth info"},
+        {"Enabled": "false"},
+        {"Comm": "launchAPP-"},
+		{"Param": "Bluetooth"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.android.getrssi@%@com.aimobile.android.getrssi.MainActivity"},
+		{"Icon": "fa-list-ul"}
+      
+    ],
+	"104": [
+      
+        {"CommTitle": "Get Mobile info"},
+        {"Enabled": "false"},
+        {"Comm": "launchAPP-"},
+		{"Param": "Mobile"},
+		{"Resultdelay": "0"},
+		{"Path": "com.aimobile.android.getrssi@%@com.aimobile.android.getrssi.MainActivity"},
+		{"Icon": "fa-list-ul"}
+      
+    ]
+  
+}
